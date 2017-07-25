@@ -109,5 +109,21 @@ $('.js--section-features').waypoint(function(direction){
 
     });
 
+    /* Maps*/
+    var map = new GMaps({
+        div: '.map',
+        lat: 53.349361,
+        lng: -6.1,
+        zoom: 12
+    });
+
+    map.addMarker({
+      lat: 53.349361,
+      lng: -6.2269942,
+      title: 'Dublin',
+      infoWindow: {
+        content: '<p>Our Dublin H.Q</p>'
+      }
+    });
 
 });
